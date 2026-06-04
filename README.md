@@ -9,11 +9,11 @@
 To build a C program that prints integer, float,character, and string literals on the console using the printf() function.
 # Algorithm:
 ### Step 1:
-  Start
+Start
 ### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
+Include the standard input-output library: #include<stdio.h>.
 ### Step 3: 
-  Inside the main() function, use printf() to display each literal along with its size in bytes using sizeof() :
+Inside the main() function, use printf() to display each literal along with its size in bytes using sizeof() :
   
    3.1 Integer literal (e.g., 10) using `%d`
    
@@ -24,18 +24,25 @@ To build a C program that prints integer, float,character, and string literals o
    3.4 String literal (e.g., "Hello C") using `%s`
    
 ### Step 4: 
-   Stop
+Stop
 # Program:
 #include <stdio.h>
 
 int main() {
     int number = 10;
+    
     float price = 25.5;
+    
     char letter = 'C';
+    
     char text[] = "Welcome to C";
+    
     printf("Integer value: %d\n", number);
+    
     printf("Float value: %.1f\n", price);
+    
     printf("Character value: %c\n", letter);
+    
     printf("String value: %s\n", text);
 
     return 0;
@@ -56,11 +63,11 @@ Thus, the program was implemented and executed successfully, and the required ou
   To build a C program that demonstrates the use of macro constants and constant variables.
 # Algorithm:
 ### Step 1:
-  Start  
+Start  
 ### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
+Include the standard input-output library: #include<stdio.h>.
 ### Step 3: 
-  Define a macro constant `PI` with value `3.14159` using `#define`.
+Define a macro constant `PI` with value `3.14159` using `#define`.
 ### Step 4: 
    Inside `main()`:
    
@@ -69,16 +76,22 @@ Thus, the program was implemented and executed successfully, and the required ou
    4.2 Initialize it with the value `7`
    
 ### Step 5:  
-  Use `printf()` to display the values of `PI` and `DAYS`.     
+Use `printf()` to display the values of `PI` and `DAYS`.     
 ### Step 6:  
-  Stop
+Stop
 # Program:
 #include <stdio.h>
+
 #define MAX 100
+
 int main() {
+
     const int MIN = 10;
+    
     printf("Macro constant MAX = %d\n", MAX);
+    
     printf("Constant variable MIN = %d\n", MIN);
+    
     return 0;
 }
 # Output:
@@ -97,26 +110,36 @@ Thus, the program was implemented and executed successfully, and the required ou
   To build a C program that declares variables of various data types—integer, float, double, and character—initializes them, and prints their values on the screen.
 # Algorithm:
 ### Step 1:
-  Start
+Start
 ### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
+Include the standard input-output library: #include<stdio.h>.
 ### Step 3: 
-  Inside main(), declare and initialize variables of types int, float, double, and char.
+Inside main(), declare and initialize variables of types int, float, double, and char.
 ### Step 4: 
-   Display their values using printf().
+Display their values using printf().
 ### Step 5:    
-   Stop
+Stop
 # Program:
 #include <stdio.h>
+
 int main() {
-    int count = 10;           
-    float price = 25.75f;     
-    double distance = 123.456; 
-    char grade = 'A';         
+
+    int count = 10;
+    
+    float price = 25.75f;
+    
+    double distance = 123.456;
+    
+    char grade = 'A';
+    
     printf("Integer value: %d\n", count);
+    
     printf("Float value: %.2f\n", price);
+    
     printf("Double value: %.3lf\n", distance);
+    
     printf("Character value: %c\n", grade);
+    
     return 0;
 }
 # Output:
@@ -133,22 +156,22 @@ int main() {
   To build a C program that takes two integers as input and demonstrates the arithmetic and bitwise operations, displaying the results of each operation.
 # Algorithm:
 ### Step 1:
-  Start
+Start
 ### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
+Include the standard input-output library: #include<stdio.h>.
 ### Step 3: 
-  Declare two integer variables a and b.
+Declare two integer variables a and b.
 ### Step 4: 
-   Prompt the user to enter two integers and read the input using scanf().
+Prompt the user to enter two integers and read the input using scanf().
 ### Step 5:    
-   Perform arithmetic operations on a and b:
+Perform arithmetic operations on a and b:
    #### Sum (a + b)
    #### Difference (a - b)
    #### Product (a * b)
    #### Quotient (a / b)
    #### Remainder (a % b)
 ### Step 6: 
-  Perform bitwise operations on a and b:
+Perform bitwise operations on a and b:
   #### AND (a &amp; b)
   #### OR (a | b)
   #### XOR (a ^ b)
@@ -163,26 +186,47 @@ int main() {
 #include <stdio.h>
 
 int main() {
+
     int a, b;
+    
     printf("Enter two integers: ");
+    
     scanf("%d %d", &a, &b);
+    
     printf("\nArithmetic Operations:\n");
+    
     printf("Addition (a + b): %d\n", a + b);
+    
     printf("Subtraction (a - b): %d\n", a - b);
+    
     printf("Multiplication (a * b): %d\n", a * b);
+    
     if (b != 0) {
+    
         printf("Division (a / b): %d\n", a / b);
+        
         printf("Remainder (a %% b): %d\n", a % b);
+    
     } else {
+    
         printf("Division and Remainder not possible (division by zero)\n");
+    
     }
+    
     printf("\nBitwise Operations:\n");
+    
     printf("AND (a & b): %d\n", a & b);
+    
     printf("OR (a | b): %d\n", a | b);
+    
     printf("XOR (a ^ b): %d\n", a ^ b);
+    
     printf("Left Shift (a << 1): %d\n", a << 1);
+    
     printf("Right Shift (a >> 1): %d\n", a >> 1);
+    
     printf("NOT (~a): %d\n", ~a);
+    
     return 0;
 }
 # Output:
@@ -201,11 +245,11 @@ Thus, the program was implemented and executed successfully, and the required ou
   To develop and implement a C program that classifies a character as a vowel, consonant, digit, or special symbol using the ternary operator.
 # Algorithm:
 ### Step 1:
-  Start
+Start
 ### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
+Include the standard input-output library: #include<stdio.h>.
 ### Step 3: 
-  Input a character ch from the user.
+Input a character ch from the user.
 ### Step 4: 
    Check if ch is a digit ('0' to '9').
    
@@ -233,18 +277,32 @@ Thus, the program was implemented and executed successfully, and the required ou
   Stop
 # Program:
 #include <stdio.h>
+
+
 int main() {
+
     char ch;
+    
     printf("Enter a character: ");
+    
     scanf("%c", &ch);
+    
     (ch >= '0' && ch <= '9') ?
+    
         printf("The character is a Digit.\n") :
+    
     ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
+    
         ((ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ||
+        
           ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') ?
+          
             printf("The character is a Vowel.\n") :
+            
             printf("The character is a Consonant.\n")) :
+        
         printf("The character is a Special Symbol.\n");
+    
     return 0;
 }
 # Output:
